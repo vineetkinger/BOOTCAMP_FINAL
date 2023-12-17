@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "BOOTCAMP_FINAL_backend": {
+      "main": "src/BOOTCAMP_FINAL_backend/main.mo",
+      "type": "motoko"
+    },
+    "BOOTCAMP_FINAL_frontend": {
+      "dependencies": [
+        "BOOTCAMP_FINAL_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/BOOTCAMP_FINAL_frontend/src/index.html"
+      },
+      "source": [
+        "src/BOOTCAMP_FINAL_frontend/assets",
+        "dist/BOOTCAMP_FINAL_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
